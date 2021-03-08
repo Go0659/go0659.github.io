@@ -181,7 +181,7 @@ article:nth-of-type(2) {
 .map {
     border: 2px solid #000;
     width: 95%;
-    height: 50;
+    height: 50%;
 }
 /* Style rules for footer */
 footer p {
@@ -283,6 +283,31 @@ footer p a {
         height: 450px;
     }
 
+    /* Tablet Viewport: Style rules for table */
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 2%;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ccc;
+    }
+
+
+
 }
 
 /* Media query for desktop viewport */
@@ -357,6 +382,10 @@ footer p a {
     #container {
         width: 1920px;
         margin: 0 auto;
+    }
+
+    table {
+        width: 80%;
     }
 
 }
